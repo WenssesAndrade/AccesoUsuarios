@@ -1,0 +1,6 @@
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\bin\Debug\EntidadesPermisos.dll
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\bin\Debug\EntidadesPermisos.pdb
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\obj\Debug\EntidadesPermisos.csproj.AssemblyReference.cache
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\obj\Debug\EntidadesPermisos.csproj.CoreCompileInputs.cache
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\obj\Debug\EntidadesPermisos.dll
+C:\Users\Wensses\source\repos\P-Automotriz1\EntidadesPermisos\obj\Debug\EntidadesPermisos.pdb
