@@ -110,5 +110,12 @@ namespace Manejadores
                 Console.WriteLine("Fallo la eliminacion" + ex.Message);
             }
         }
+
+        public bool ExisteUsuario(Usuarios usuario)
+        {
+            var existe = _usuariosAccesoDatos.ExisteUsuario(usuario);
+            return existe;
+        }
+
     }
 }

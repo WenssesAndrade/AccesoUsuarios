@@ -61,7 +61,7 @@ namespace P_Automotriz1
 
         private void Eliminar()
         {
-            if (MessageBox.Show("Desea eliminar el producto seleccionado", "Eliminar categoria", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Desea eliminar el producto seleccionado?", "Eliminar categoria", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 var categoria = dtgProductos.CurrentRow.Cells["nombre"].Value.ToString();
                 _manejapro.EliminarProductos(categoria);

@@ -15,7 +15,7 @@ namespace AccesoDatos
 
             try
             {
-                _conexion = new ConexionAccesoDatos("localhost", "root", " ", "automotriz", 3306);
+                _conexion = new ConexionAccesoDatos("localhost", "root","", "automotriz", 3306);
             }
             catch (Exception ex)
             {
@@ -109,7 +109,8 @@ namespace AccesoDatos
             try
             {
                 string consulta = string.Format("insert into usuarios values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
-                usuario.IdUsuarios, usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.FechaNacimiento, usuario.Rfc,
+                usuario.IdUsuarios, usuario.Nombre, usuario.Apellidop, usuario.Apellidom, usuario.FechaNacimiento,
+                usuario.Rfc, usuario.Contraseña,
                 usuario.Fkaccesos);
                 _conexion.EjecutarConsulta(consulta);
             }
@@ -140,8 +141,8 @@ namespace AccesoDatos
         {
             try
             {
-                string consulta = string.Format("update usuarios set nombre = '{0}', apellidop = '{1}', apellidom = '{2}', fechanacimiento = '{3}', rfc = '{4}',fkidaccesos = '{5}' where idusuarios = '{6}'", usuario.Nombre,
-                usuario.Apellidop, usuario.Apellidom, usuario.FechaNacimiento, usuario.Rfc, usuario.Fkaccesos, usuario.IdUsuarios);
+                string consulta = string.Format("update usuarios set nombre = '{0}', apellidop = '{1}', apellidom = '{2}', fechanacimiento = '{3}', rfc = '{4}', contraseña = '{5}' fkidaccesos = '{6}' where idusuarios = '{7}'", usuario.Nombre,
+                usuario.Apellidop, usuario.Apellidom, usuario.FechaNacimiento, usuario.Rfc, usuario.Fkaccesos, usuario.Contraseña, usuario.IdUsuarios);
                 _conexion.EjecutarConsulta(consulta);
             }
             catch (Exception ex)
@@ -153,7 +154,7 @@ namespace AccesoDatos
         {
             var ListaUsuarios = new List<Usuarios>();
             var ds = new DataSet();
-            string consulta = string.Format("select * from usuarios where Nombre like '%{0}%'", filtro);
+            string consulta = string.Format("select * from usuarios where nombre like '%{0}%'", filtro);
             ds = _conexion.ObtenerDatos(consulta, "usuarios");
 
 
@@ -164,17 +165,41 @@ namespace AccesoDatos
             {
                 var uru = new Usuarios
                 {
-                    IdUsuarios = int.Parse(row["idusuario"].ToString()),
+                    IdUsuarios = int.Parse(row["idusuarios"].ToString()),
                     Nombre = row["nombre"].ToString(),
                     Apellidop = row["apellidop"].ToString(),
                     Apellidom = row["apellidom"].ToString(),
                     FechaNacimiento = row["fechanacimiento"].ToString(),
                     Rfc = row["rfc"].ToString(),
-                    Fkaccesos = row["fkidaccesos"].ToString(),
+                    Contraseña = row["contraseña"].ToString(),
+                    Fkaccesos = row["fkidaccesos"].ToString()
                 };
                 ListaUsuarios.Add(uru);
             }
             return ListaUsuarios;
+        }
+
+        public bool ExisteUsuario(Usuarios usuario)
+        {
+            try
+            {
+                string consulta = string.Format("select count(*) from usuarios where nombre = '{0}' and contraseña = '{1}'", usuario.Nombre, usuario.Contraseña);
+                var existe = _conexion.Existencia(consulta);
+                if (existe == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Fallo la consulta" + ex.Message);
+                return false;
+            }
         }
 
 
@@ -193,8 +218,6 @@ namespace AccesoDatos
                 Console.WriteLine("Fallo el guardado" + ex.Message);
             }
         }
-
-
 
         public void EliminarProductos(string producto)
         {
@@ -226,14 +249,12 @@ namespace AccesoDatos
         }
 
 
-
         public List<Productos> ObtenerProductos(string filtro)
         {
             var ListaProductos = new List<Productos>();
             var ds = new DataSet();
             string consulta = string.Format("select * from productos where Nombre like '%{0}%'", filtro);
             ds = _conexion.ObtenerDatos(consulta, "productos");
-
 
 
             var dt = new DataTable();

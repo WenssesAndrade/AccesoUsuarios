@@ -28,6 +28,16 @@ namespace P_Automotriz1
             CargarHerramientas("");
         }
 
+        public void Eliminar()
+        {
+            if (MessageBox.Show("¿Desea eliminar la herramienta seleccionada?", "Eliminar categoria", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                var categoria = dtgHerramientas.CurrentRow.Cells["nombre"].Value.ToString();
+                _manejaherra.EliminarHerramientas(categoria);
+            }
+
+
+        }
         private void btnAgregarH_Click(object sender, EventArgs e)
         {
             FrmCrearHerramientas fc = new FrmCrearHerramientas(this);
@@ -61,17 +71,7 @@ namespace P_Automotriz1
 
             fc.ShowDialog();
         }
-
-        private void Eliminar()
-        {
-            if (MessageBox.Show("Desea eliminar la herramienta seleccionada", "Eliminar categoria", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                var categoria = dtgHerramientas.CurrentRow.Cells["nombre"].Value.ToString();
-                _manejaherra.EliminarHerramientas(categoria);
-            }
-
-
-        }
+              
 
         private void btnEliminarH_Click(object sender, EventArgs e)
         {

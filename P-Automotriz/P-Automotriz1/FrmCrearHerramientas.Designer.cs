@@ -45,9 +45,10 @@ namespace P_Automotriz1
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(130, 457);
+            this.btnCancelar.Location = new System.Drawing.Point(94, 319);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(133, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(103, 27);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -55,9 +56,10 @@ namespace P_Automotriz1
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(432, 457);
+            this.btnGuardar.Location = new System.Drawing.Point(277, 319);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(133, 36);
+            this.btnGuardar.Size = new System.Drawing.Size(103, 27);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -66,88 +68,98 @@ namespace P_Automotriz1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 45);
+            this.label1.Location = new System.Drawing.Point(61, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Código:";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(251, 42);
+            this.txtCodigo.Location = new System.Drawing.Point(157, 32);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(343, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(268, 21);
             this.txtCodigo.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(79, 116);
+            this.label2.Location = new System.Drawing.Point(61, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nombre:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(251, 113);
+            this.txtNombre.Location = new System.Drawing.Point(157, 75);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(343, 26);
+            this.txtNombre.Size = new System.Drawing.Size(268, 21);
             this.txtNombre.TabIndex = 5;
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(251, 257);
+            this.txtMarca.Location = new System.Drawing.Point(157, 175);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(343, 26);
+            this.txtMarca.Size = new System.Drawing.Size(268, 21);
             this.txtMarca.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 260);
+            this.label3.Location = new System.Drawing.Point(61, 178);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.Size = new System.Drawing.Size(42, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Marca";
             // 
             // txtDesc
             // 
-            this.txtDesc.Location = new System.Drawing.Point(251, 186);
+            this.txtDesc.Location = new System.Drawing.Point(157, 125);
+            this.txtDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(343, 26);
+            this.txtDesc.Size = new System.Drawing.Size(268, 21);
             this.txtDesc.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(79, 189);
+            this.label4.Location = new System.Drawing.Point(61, 128);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
+            this.label4.Size = new System.Drawing.Size(78, 15);
             this.label4.TabIndex = 6;
             this.label4.Text = "Descripción: ";
             // 
             // txtMedida
             // 
-            this.txtMedida.Location = new System.Drawing.Point(251, 329);
+            this.txtMedida.Location = new System.Drawing.Point(157, 224);
+            this.txtMedida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMedida.Name = "txtMedida";
-            this.txtMedida.Size = new System.Drawing.Size(343, 26);
+            this.txtMedida.Size = new System.Drawing.Size(268, 21);
             this.txtMedida.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(79, 332);
+            this.label6.Location = new System.Drawing.Point(61, 227);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.Size = new System.Drawing.Size(55, 15);
             this.label6.TabIndex = 10;
             this.label6.Text = "Medida: ";
             // 
             // FrmCrearHerramientas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 556);
+            this.ClientSize = new System.Drawing.Size(501, 388);
             this.Controls.Add(this.txtMedida);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMarca);
@@ -160,8 +172,8 @@ namespace P_Automotriz1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmCrearHerramientas";
             this.Text = "FrmCrearHerramientas";
             this.Load += new System.EventHandler(this.FrmCrearHerramientas_Load);

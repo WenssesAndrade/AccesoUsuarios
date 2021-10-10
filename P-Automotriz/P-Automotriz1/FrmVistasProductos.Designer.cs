@@ -38,9 +38,10 @@ namespace P_Automotriz1
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(794, 316);
+            this.btnCancelar.Location = new System.Drawing.Point(787, 237);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(212, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(176, 28);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@ namespace P_Automotriz1
             // 
             // btnEliminarP
             // 
-            this.btnEliminarP.Location = new System.Drawing.Point(794, 183);
+            this.btnEliminarP.Location = new System.Drawing.Point(787, 161);
+            this.btnEliminarP.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarP.Name = "btnEliminarP";
-            this.btnEliminarP.Size = new System.Drawing.Size(212, 37);
+            this.btnEliminarP.Size = new System.Drawing.Size(176, 28);
             this.btnEliminarP.TabIndex = 6;
             this.btnEliminarP.Text = "Eliminar Productos";
             this.btnEliminarP.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@ namespace P_Automotriz1
             // 
             // btnAgregarP
             // 
-            this.btnAgregarP.Location = new System.Drawing.Point(794, 61);
+            this.btnAgregarP.Location = new System.Drawing.Point(787, 85);
+            this.btnAgregarP.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarP.Name = "btnAgregarP";
-            this.btnAgregarP.Size = new System.Drawing.Size(212, 37);
+            this.btnAgregarP.Size = new System.Drawing.Size(176, 28);
             this.btnAgregarP.TabIndex = 5;
             this.btnAgregarP.Text = "Agregar Productos";
             this.btnAgregarP.UseVisualStyleBackColor = true;
@@ -69,24 +72,24 @@ namespace P_Automotriz1
             // dtgProductos
             // 
             this.dtgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgProductos.Location = new System.Drawing.Point(23, 21);
-            this.dtgProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgProductos.Location = new System.Drawing.Point(18, 16);
+            this.dtgProductos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgProductos.Name = "dtgProductos";
-            this.dtgProductos.Size = new System.Drawing.Size(700, 420);
+            this.dtgProductos.Size = new System.Drawing.Size(734, 315);
             this.dtgProductos.TabIndex = 4;
             this.dtgProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProductos_CellDoubleClick);
             // 
             // FrmVistasProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 460);
+            this.ClientSize = new System.Drawing.Size(991, 345);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEliminarP);
             this.Controls.Add(this.btnAgregarP);
             this.Controls.Add(this.dtgProductos);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmVistasProductos";
             this.Text = "FrmVistasProductos";
             ((System.ComponentModel.ISupportInitialize)(this.dtgProductos)).EndInit();

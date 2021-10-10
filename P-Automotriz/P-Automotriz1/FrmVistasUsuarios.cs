@@ -69,11 +69,26 @@ namespace P_Automotriz1
 
         private void Eliminar()
         {
-            if (MessageBox.Show("Desea eliminar el usuario seleccionado", "Eliminar usuario", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Desea eliminar el usuario seleccionado?", "Eliminar usuario", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 var categoria = dtgUsuarios.CurrentRow.Cells["nombre"].Value.ToString();
                 _manejadorUsuario.EliminarUsuarios(categoria);
             }
+
+        }
+
+        private void FrmVistasUsuarios_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void dtgUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

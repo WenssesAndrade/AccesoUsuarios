@@ -57,9 +57,6 @@ namespace Manejadores
             }
             catch (Exception ex)
             {
-
-
-
                 Console.WriteLine("Fallo en guardar " + ex.Message);
             }
         }
@@ -73,7 +70,6 @@ namespace Manejadores
         }
 
 
-
         public void ActualizarHerramientas(Herramientas herramienta)
         {
             try
@@ -82,9 +78,6 @@ namespace Manejadores
             }
             catch (Exception ex)
             {
-
-
-
                 Console.WriteLine("Fallo en actualizar " + ex.Message);
             }
         }
@@ -99,8 +92,6 @@ namespace Manejadores
             }
             catch (Exception ex)
             {
-
-
 
                 Console.WriteLine("Fallo en eliminar " + ex.Message);
             }

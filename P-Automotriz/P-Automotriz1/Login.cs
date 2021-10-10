@@ -29,7 +29,7 @@ namespace P_Automotriz1
             _usuarios.Contraseña = txtContraseña.Text;
             if (_usuariosManejador.ExisteUsuario(_usuarios))
             {
-                if (txtUsuario.Text == "Wendy" && txtContraseña.Text == "1234")
+                if (txtUsuario.Text == "Wensses" && txtContraseña.Text == "12345")
                 {
                     Menu formmenu = new Menu();
                     formmenu.Show();
@@ -70,6 +70,19 @@ namespace P_Automotriz1
         private void btnRegresar_Click(object sender, EventArgs e)
         {   
             Application.Exit();
+        }
+
+        private void btnInvitado_Click(object sender, EventArgs e)
+        {
+            Menu formmenu = new Menu();
+            formmenu.Show();
+            this.Hide();
+            formmenu.toolStrip1.Enabled = false;
+            formmenu.btnSalir.Enabled = true;
+
+
+            MessageBox.Show("No puedes acceder al contenido en este formulario");
+
         }
     }
 }

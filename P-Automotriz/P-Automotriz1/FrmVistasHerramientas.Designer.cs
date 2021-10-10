@@ -39,18 +39,19 @@ namespace P_Automotriz1
             // dtgHerramientas
             // 
             this.dtgHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgHerramientas.Location = new System.Drawing.Point(13, 14);
-            this.dtgHerramientas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtgHerramientas.Location = new System.Drawing.Point(26, 10);
+            this.dtgHerramientas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgHerramientas.Name = "dtgHerramientas";
-            this.dtgHerramientas.Size = new System.Drawing.Size(540, 420);
+            this.dtgHerramientas.Size = new System.Drawing.Size(709, 315);
             this.dtgHerramientas.TabIndex = 0;
             this.dtgHerramientas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgHerramientas_CellDoubleClick);
             // 
             // btnAgregarH
             // 
-            this.btnAgregarH.Location = new System.Drawing.Point(607, 59);
+            this.btnAgregarH.Location = new System.Drawing.Point(774, 44);
+            this.btnAgregarH.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarH.Name = "btnAgregarH";
-            this.btnAgregarH.Size = new System.Drawing.Size(212, 37);
+            this.btnAgregarH.Size = new System.Drawing.Size(185, 28);
             this.btnAgregarH.TabIndex = 1;
             this.btnAgregarH.Text = "Agregar Herramientas";
             this.btnAgregarH.UseVisualStyleBackColor = true;
@@ -58,9 +59,10 @@ namespace P_Automotriz1
             // 
             // btnEliminarH
             // 
-            this.btnEliminarH.Location = new System.Drawing.Point(607, 181);
+            this.btnEliminarH.Location = new System.Drawing.Point(774, 136);
+            this.btnEliminarH.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarH.Name = "btnEliminarH";
-            this.btnEliminarH.Size = new System.Drawing.Size(212, 37);
+            this.btnEliminarH.Size = new System.Drawing.Size(185, 28);
             this.btnEliminarH.TabIndex = 2;
             this.btnEliminarH.Text = "Eliminar Herramientas";
             this.btnEliminarH.UseVisualStyleBackColor = true;
@@ -68,24 +70,25 @@ namespace P_Automotriz1
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(607, 314);
+            this.btnCancelar.Location = new System.Drawing.Point(774, 236);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(212, 37);
+            this.btnCancelar.Size = new System.Drawing.Size(185, 28);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // FrmVistasHerramientas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 448);
+            this.ClientSize = new System.Drawing.Size(981, 336);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEliminarH);
             this.Controls.Add(this.btnAgregarH);
             this.Controls.Add(this.dtgHerramientas);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmVistasHerramientas";
             this.Text = "FrmVistasHerramientas";
             ((System.ComponentModel.ISupportInitialize)(this.dtgHerramientas)).EndInit();

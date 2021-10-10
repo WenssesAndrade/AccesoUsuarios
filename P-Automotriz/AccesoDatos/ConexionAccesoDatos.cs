@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
-using MySqlConnector;
-//using MySql.Data.MySqlClient;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace AccesoDatos
 {
@@ -37,5 +37,14 @@ namespace AccesoDatos
             da.Fill(ds, tabla);
             return ds;
         }
+
+        public int Existencia(string consulta)
+        {
+            _conn.Open();
+            var command = new MySqlCommand(consulta, _conn);
+            var res = Convert.ToInt32(command.ExecuteScalar().ToString());
+            _conn.Close();
+            return res;
+        }   
     }
 }
